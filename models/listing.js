@@ -9,9 +9,8 @@ const listingSchema= new Schema({
     },
     description : String,
     image:{
-        type:String,
-        default:"https://imgs.search.brave.com/rytQUN8eSWCohQXH27A8ySWfV-f0Zk_4dnKuy6lEu5c/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTEw/MzIyODY0L3Bob3Rv/L3JlZC1zdW5zZXQu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PVhTTUtDQlFUZ1Zm/bGxCSFJNY0VWVHlw/QnNQSkJ4Uk9iMGZn/Y1p4VXVTakU9",
-        set:(v)=>v === ""? "https://imgs.search.brave.com/rytQUN8eSWCohQXH27A8ySWfV-f0Zk_4dnKuy6lEu5c/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTEw/MzIyODY0L3Bob3Rv/L3JlZC1zdW5zZXQu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PVhTTUtDQlFUZ1Zm/bGxCSFJNY0VWVHlw/QnNQSkJ4Uk9iMGZn/Y1p4VXVTakU9" :v,
+        url:String,
+        filename:String,
     },
     price:Number,
     location: String,

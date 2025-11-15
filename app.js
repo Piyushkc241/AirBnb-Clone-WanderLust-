@@ -1,3 +1,8 @@
+if(process.env.NODE_ENV!="production"){
+  require('dotenv').config();
+}
+console.log(process.env.SECRET);
+
 const express = require("express");
 const app = express();
 const port = 8080;
@@ -60,6 +65,11 @@ app.use((req,res,next)=>{
   res.locals.currUser=req.user;
   next();
 });
+
+app.get("/home", (req, res) => {
+  res.render("listings/home");
+});
+
 
 //demp user
 // app.get("/demouser",async (req,res)=>{
